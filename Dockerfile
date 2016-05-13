@@ -6,7 +6,7 @@ ENV PHPIPAM_VERSION 1.2
 
 # Install required deb packages
 RUN apt-get update && \ 
-	apt-get install -y git php-pear php5-curl php5-mysql php5-json php5-gmp php5-mcrypt php5-ldap libldap2-dev libgmp-dev libmcrypt-dev nano cron && \
+	apt-get install -y git php-pear php5-curl php5-mysql php5-json php5-gmp php5-mcrypt php5-ldap libldap2-dev libgmp-dev libmcrypt-dev nano cron fping && \
 	rm -rf /var/lib/apt/lists/*
 
 # Configure apache and required PHP modules 

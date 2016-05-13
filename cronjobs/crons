@@ -1,0 +1,7 @@
+# Look for and purge old sessions every 30 minutes
+09,39 * * * * root [ -x /usr/lib/php5/sessionclean ] && /usr/lib/php5/sessionclean
+
+
+*/15 * * * * root /usr/local/bin/php /var/www/html/functions/scripts/pingCheck.php
+*/30 * * * * root /usr/local/bin/php /var/www/html/functions/scripts/discoveryCheck.php
+
